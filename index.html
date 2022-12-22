@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gui Paes || Digital Services</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/faa48d8212.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <a id="homeButton" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.98 149.98">
+            <path d="M113.42,49.07l20.49-20.49c23.24,29.43,21.28,72.26-5.89,99.42-27.17,27.17-69.99,29.13-99.42,5.89l20.49-20.49c18.02,12.19,42.73,10.3,58.69-5.66,15.96-15.96,17.85-40.66,5.66-58.69Z"/>
+            <path d="M49.07,113.42c-2.42-1.63-4.72-3.52-6.86-5.66s-4.03-4.44-5.66-6.86l21.33-21.33,12.52,12.52-21.33,21.33Z"/>
+            <path d="M100.9,36.56c2.42,1.63,4.72,3.52,6.86,5.66,2.14,2.14,4.03,4.44,5.66,6.86l-21.33,21.33-12.52-12.52,21.33-21.33Z"/>
+            <path d="M21.96,21.96C49.13-5.2,91.96-7.17,121.39,16.07l-20.49,20.49c-18.02-12.19-42.73-10.3-58.69,5.66-15.96,15.96-17.85,40.66-5.66,58.69l-20.49,20.49C-7.17,91.96-5.2,49.13,21.96,21.96Z"/>
+            </svg>
+        </a>        
+        <button id="openButton" class="open btn"><i class="fa-solid fa-bars"></i> <p>Menu</p> </button>
+        <div id="menu" class="menu mobile"> 
+            <button id="closeMenu" class="close btn"><i class="fa-solid fa-xmark"></i></button>
+            <a class="nav btn" href="#">About</a>
+            <a class="nav btn" href="#">Work</a>
+            <a class="nav btn" href="#">Lab-X</a>
+            <a class="nav btn" href="#">Contact</a>
+        </div>
+       
+    </nav>
+    <header>
+        <h1 id="headLine">Designing solutions for a Digital World</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.98 149.98">
+            <path d="M113.42,49.07l20.49-20.49c23.24,29.43,21.28,72.26-5.89,99.42-27.17,27.17-69.99,29.13-99.42,5.89l20.49-20.49c18.02,12.19,42.73,10.3,58.69-5.66,15.96-15.96,17.85-40.66,5.66-58.69Z"/>
+            <path d="M49.07,113.42c-2.42-1.63-4.72-3.52-6.86-5.66s-4.03-4.44-5.66-6.86l21.33-21.33,12.52,12.52-21.33,21.33Z"/>
+            <path d="M100.9,36.56c2.42,1.63,4.72,3.52,6.86,5.66,2.14,2.14,4.03,4.44,5.66,6.86l-21.33,21.33-12.52-12.52,21.33-21.33Z"/>
+            <path d="M21.96,21.96C49.13-5.2,91.96-7.17,121.39,16.07l-20.49,20.49c-18.02-12.19-42.73-10.3-58.69,5.66-15.96,15.96-17.85,40.66-5.66,58.69l-20.49,20.49C-7.17,91.96-5.2,49.13,21.96,21.96Z"/>
+        </svg>
+    </header>
+    <main>
+        <div id="portfolio" class="gallery">
+            <a href="#" class="proj">Projeto 01</a>
+            <a href="#" class="proj">Projeto 02</a>
+            <a href="#" class="proj">Projeto 03</a>
+            <a href="#" class="proj">Projeto 04</a>
+            <a href="#" class="proj">Projeto 05</a>
+        </div>
+        <div id="Products">
+
+        </div>
+        <div id="feedbacks"></div>
+    </main>
+       
+    <footer>
+        Gui Paes 2022© || All rights reserved.
+
+    </footer>
+
+    <script>
+
+    let menu = document.getElementById("menu");
+    let openBtn = document.getElementById("openButton");
+    let closeBtn = document.getElementById("closeMenu")
+    
+    let screenW = screen.availWidth;
+
+    console.log(screenW)
+
+    if (screenW >= 600){
+        menu.style.display = 'flex';
+    }else menu.style.display = 'none';
+
+
+    
+    
+    openBtn.addEventListener('click', function() {
+        menu.style.display = 'flex';
+        console.log(menu.style.display)
+    }, false)
+
+    closeBtn.addEventListener('click', function() {
+        menu.style.display = 'none';
+        console.log(menu.style.display)
+    }, false)
+           
+    </script>
+</body>
+</html>

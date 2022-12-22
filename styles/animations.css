@@ -1,0 +1,20 @@
+@import url('main.css');
+
+@keyframes rotation {
+    to{
+        transform: rotate(+360deg)
+    }
+}
+@keyframes menu-expand {
+
+    0%{
+      clip-path: circle(0px at top right);
+      background: linear-gradient( -135deg, RGBA(204,255,0,0.7), RGBA(0,255,132,0.3));
+    }
+    100%{
+      clip-path: circle(100%);
+      background: linear-gradient( -135deg, RGBA(204,255,0,0.7), RGBA(0,255,132,0.3));
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(9.6px);
+    }
+  }
