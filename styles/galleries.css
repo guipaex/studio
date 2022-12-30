@@ -34,7 +34,8 @@
     flex-grow: 1;
     transition: 250ms;
 
-}.proj:hover{
+}.proj img:hover{
     background-color: var(--eletricLime);
     transform: scale(1.05);
+    filter: blur(7px);
 }
