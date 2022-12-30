@@ -6,55 +6,58 @@
 @font-face {
     font-family: 'Metana';
     src: url(../fonts/NeueMetanaNext-SemiBold.otf);
+    scroll-behavior: smooth;
 }
 
 *{
-    font-family:'Sora', 'sans-serif';
-    line-height: 1.27;
-    
+    font-family:'Sora', 'sans-serif';    
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
     --darkBlack: #0F0F0F;
     --almostWhite: #E6E6E6;
     --eletricLime: #c8f500;
-
     color: var(--almostWhite);
 }
 
-header{
-    height: 720px;
-    overflow: clip;
-    display: flex;
-    position: relative;
+body{  
+    background-color: var(--darkBlack);  
 }
+main{
+    max-width: 900px;
+    margin: auto;
+}
+#home{
+    display: flex;
+    height: 720px;
+}
+
+#bgLogo{
+    max-width: 500px;
+    position: absolute;
+    top: 0;     right: 0;
+    bottom: 0;  left:0;
+    margin:auto;
+
+    fill: none;
+    stroke-width: 0.1px;
+    stroke: white;
+    animation: rotation 300s linear infinite;
+}
+
 #headLine{
+    position: absolute;
+    top: 50%;     right: 0;
+    bottom: 50%;  left:0;
+
+    text-align: center;
     margin: auto;
     max-width: 500px;
     font-family: 'Metana';
     line-height: 1.27em;
     color: var(--eletricLime);
 }
-header svg {
-    position: absolute;
-    top: 0;     bottom: 0;
-    left: 0;    right: 0;
-    margin: auto;
 
-    max-width: 500px;
-    
-    stroke: var(--almostWhite);
-    stroke-width: 0.2;
-    animation: rotation 240s linear infinite;
-    fill: transparent;
-}
-body{
-    
-    text-align: center;
-    line-height: 100px;
-    background-color: var(--darkBlack);
-    
-}
+
 footer{
     align-items: center;
     bottom: 0;

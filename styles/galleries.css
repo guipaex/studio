@@ -1,5 +1,8 @@
 @import url('main.css');
 @import url('animations.css');
+*{
+    scroll-behavior: smooth;
+}
 
 #portfolio{
     color: Black;
@@ -20,15 +23,15 @@
     text-decoration: none;
     color: var(--eletricLime);
 }
-.proj{
-
-    min-width: 200px;
-    min-height: 150px;
+.proj img{
+    width: 200px;
+    height: 150px;
+    object-fit:cover;
     margin: 7px;
     border: 1px solid var(--eletricLime);
+    overflow: hidden;
     border-radius: 7px;
     flex-grow: 1;
-
     transition: 250ms;
 
 }.proj:hover{
