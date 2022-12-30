@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
 @import url('menu.css');
-@import url('galleries.css');
+@import url('portfolio.css');
 @import url('animations.css');
 
 @font-face {font-family: 'Metana';  src: url(../fonts/NeueMetanaNext-SemiBold.otf); scroll-behavior: smooth;}
@@ -12,7 +12,7 @@
     font-family:'Sora', 'sans-serif';
     color: var(--almostWhite);
     margin: 0;    padding: 0;
-    
+    scroll-behavior: smooth;
 }
 body{  
     background-color: var(--darkBlack);
@@ -30,7 +30,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: no-repeat center url('../img/logo.png');*/
 }
 #home img{
     min-width: 400px;
