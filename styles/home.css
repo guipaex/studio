@@ -1,0 +1,30 @@
+@import url('main.css'); @import url('animations.css');
+
+#home{
+    overflow: clip;
+    max-width: 1440px;
+    min-height: 720px; max-height: 900px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home img{
+    min-width: 400px;
+    animation: rotation 120s linear infinite;
+}
+#headline{
+    display: block;
+    position: absolute;
+    left: 0;    right: 0;
+}#headline h1{
+    font-size: 5rem;
+    font-weight:900;
+    line-height: .75;
+    margin: 20px;
+}#headline h3{
+    line-height: 1.2;
+    font-family: 'Metana';
+    color: var(--eletricLime);
+    font-size: 1.2rem;
+}

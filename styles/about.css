@@ -1,0 +1,49 @@
+@import url('main.css'); @import url('animations.css');
+
+#about{
+    margin:auto;
+    overflow: clip;
+    min-height: 720px; max-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#photo img{
+    width: 400px;
+}#gui{position:relative;}
+#logoPhoto{
+    clip-path: circle(50%);
+    position:absolute;
+    animation: rotation 540s linear infinite;
+}
+#presentation{
+    max-width: 500px;
+    padding: 20px;
+    flex-flow: column;
+}
+#about h1{
+    color: var(--eletricLime);
+    font-family: 'Metana';
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 20px;
+   
+}
+#about p{
+    padding: 20px;
+    max-width: 450px;
+    text-align: justify;
+}
+@media (max-width:600px) {
+    #about{
+        flex-direction: column;
+    }
+    #photo{
+        margin:auto;
+    }
+    #presentation{
+        margin-left: auto;
+    }
+}
