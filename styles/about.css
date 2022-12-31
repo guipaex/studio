@@ -9,14 +9,23 @@
     align-items: center;
 }
 
-
-#photo img{
-    width: 400px;
-}#gui{position:relative;}
-#logoPhoto{
+#photo{
+    overflow: clip;
+    max-width: 450px;
+    display: flex;
     clip-path: circle(50%);
-    position:absolute;
-    animation: rotation 540s linear infinite;
+}
+#photo img{
+    max-width: 100%;
+}
+#frame{
+    max-width: 100%;
+    clip-path: circle(50%);
+    animation: rotation 500s linear infinite;
+}
+#gui{
+    max-width: 100%;
+    transform: translateX(-100%);
 }
 #presentation{
     max-width: 500px;
@@ -26,8 +35,8 @@
 #about h1{
     color: var(--eletricLime);
     font-family: 'Metana';
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 30px;
+    line-height: 1;
     padding: 20px;
    
 }
@@ -36,14 +45,22 @@
     max-width: 450px;
     text-align: justify;
 }
+
 @media (max-width:600px) {
     #about{
         flex-direction: column;
+        margin: 70px auto;
     }
     #photo{
-        margin:auto;
+        overflow: clip;
+        max-width: 450px;
+        display: flex;
+        clip-path: circle(50%);
     }
-    #presentation{
-        margin-left: auto;
+
+    #about h1{
+        font-size: 1.3rem;
+        line-height: 1.5;
     }
+
 }
