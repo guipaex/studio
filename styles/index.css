@@ -42,18 +42,18 @@ footer{
 }  
 #social-links{
     color: var(--darkBlack);
-    width: 300px;
+    width: 250px;
     font-size: 1.7rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }#social-links p{ font-size: 1rem;}
 
-.fa-brands{
-    color: #0F0F0F;
-}
-
 footer p{
     color: #0F0F0F;
-    margin: 10px;
+    margin: 5px;
+}
+footer img{
+    align-items: baseline;
+    width: 1.5rem;
 }
