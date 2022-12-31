@@ -21,26 +21,39 @@ main{
     max-width: 900px;
     margin: auto; 
 }
-
-
 .testmonial{
     width: 350px;
     border: 1px solid white;
     border-radius: 5px;
-
 }
 
 footer{
     display: flex;
+    flex-flow: row wrap;
     justify-content:space-around;
     align-items: center;
     text-align: center;
     bottom: 0;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--darkBlack);
     padding: 10px;
     background-color: var(--eletricLime);
-}#social-links{
+}  
+#social-links{
+    color: var(--darkBlack);
+    width: 300px;
+    font-size: 1.7rem;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+}#social-links p{ font-size: 1rem;}
+
+.fa-brands{
+    color: #0F0F0F;
+}
+
+footer p{
+    color: #0F0F0F;
+    margin: 10px;
 }

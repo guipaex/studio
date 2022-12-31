@@ -2,7 +2,7 @@
 #header{
     box-sizing: border-box;
     height: 70px;
-    max-width: 1080px;
+    max-width: 900px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -10,6 +10,7 @@
 }
 #menuLogo{
     fill: var(--almostWhite);
+    margin-left: 20px;
     width:45px;
     padding: 10px;
     z-index: 10;
@@ -20,6 +21,7 @@
 }
 
 #links{
+    margin-right: 30px;
     display: flex;
     list-style: none;
     gap: 2rem;
@@ -71,6 +73,7 @@ a:hover{
     }
     #links{
         position: absolute;
+        margin: auto;
         display: block;
         top: calc(100% - 70%);    
         right: 0;  left: 0;
