@@ -1,3 +1,4 @@
+/*Menu Config*/
 const menuBtn = document.getElementById("mobile-btn");
 const links = document.getElementById("links")
 const menu = document.getElementById("nav");
