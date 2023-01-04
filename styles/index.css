@@ -27,6 +27,29 @@ main{
     border-radius: 5px;
 }
 
+#contact{
+    padding: 20px;
+
+    height: 150px;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+    border-left: #c8f500 5px solid;
+}
+#contact h1{
+    padding: 20px;
+    font-family: 'Metana';
+    text-transform: uppercase;
+    color: var(--eletricLime);
+    font-size: 2rem;
+    text-align: left;
+}
+#contact p{
+    padding: 20px;
+    text-align: left;
+}
+
+
 footer{
     display: flex;
     flex-flow: row wrap;
@@ -56,4 +79,9 @@ footer p{
 footer img{
     align-items: baseline;
     width: 1.5rem;
+    
+}
+footer img:hover{
+    width: 1.7rem;
+    transition: 300ms;
 }
