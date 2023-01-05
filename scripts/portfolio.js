@@ -7,7 +7,7 @@ function createThumbnail(){
         let bg = itemBG[i]
         /*let title = `<p class="title">${proj}</p>`;*/
         /* gallery[i].innerHTML += title;*/
-        bg.style.backgroundImage = `url('../img/thumbs/${proj}.jpg')`;
+        bg.style.backgroundImage = `url('./img/thumbs/${proj}.jpg')`;
     }
    
 }
