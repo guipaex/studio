@@ -2,6 +2,96 @@
 @import url('animations.css');
 
 #works{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+#works a{
+    text-decoration: none;
+}
+#works h1{
+    font-family: 'metana';
+    color:var(--eletricLime);
+    margin: 50px auto;
+}
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.proj{
+    width: 250px;
+    height: 200px;
+    box-sizing: border-box;
+    overflow: clip;
+    border-radius: 7px;
+    flex-grow: 1;
+    padding: 0;
+    margin: 1%;
+    transition: 300ms;
+}
+.info{
+    border-radius: 7px;
+    position: relative;
+    line-height: 200px;
+    background-position: center center;
+    background-size: cover;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+.title{
+    opacity: 0;
+    color: var(--almostWhite);
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 500ms;
+    position: relative;
+    bottom: 0;
+}
+.title:hover{
+    opacity: 1;
+    background-color: #0f0f0ff1;
+}
+.info:hover{
+    transform: scale(1.15);   
+}
+.proj:hover{
+    z-index: 10;
+    transform: scale(1.15);   
+    border: var(--eletricLime) 1px solid;
+    -webkit-box-shadow:0px 0px 30px 0px rgba(200,245,0,0.5);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(200,245,0,0.5);
+    box-shadow: 0px 0px 15px 0px rgba(200,245,0,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#works{
     padding: 10px;
     margin: auto;
     text-align: center;
@@ -41,7 +131,13 @@
     box-shadow: 0px 0px 10px 0px rgba(200,245,0,0.4);
     
 }
-.thumb img:hover{
-    filter: blur(10px);
-    opacity: 0.3;
-}
+.info{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family: 'Metana';
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}*/

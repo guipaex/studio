@@ -10,7 +10,8 @@
     align-items: center;
 }
 #home img{
-    min-width: 400px;
+    width: 50vw; min-width: 400px;
+    opacity: 0.3;
     animation: rotation 120s linear infinite;
 }
 #headline{

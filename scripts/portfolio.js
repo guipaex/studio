@@ -1,8 +1,15 @@
-let projects = document.getElementById('projects')
-let item = document.getElementsByClassName('thumb')
+function createThumbnail(){
+    let gallery = document.getElementsByClassName('proj');
+    let itemBG = document.getElementsByClassName('info')
 
-for(i = 0; i < item.length; i++){
-    projName = item[i].id;
-    let thumbNail = `<img src="img/thumbs/thumb_${projName}.jpg">`
-    item[i].innerHTML += thumbNail;  
+    for (i = 0; i < gallery.length; i++){
+        let proj = gallery[i].id;
+        let bg = itemBG[i]
+        /*let title = `<p class="title">${proj}</p>`;*/
+        /* gallery[i].innerHTML += title;*/
+        bg.style.backgroundImage = `url('../img/thumbs/${proj}.jpg')`;
+    }
+   
 }
+
+createThumbnail()
